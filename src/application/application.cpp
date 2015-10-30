@@ -1,6 +1,8 @@
 //----LOCAL----
 #include "application.h"
 
+#include "stdio.h"
+
 namespace Opplyse
 {
 	namespace Application
@@ -18,6 +20,7 @@ namespace Opplyse
 		Window::MainWindow& Application::addMainWindow()
 		{
 			Window::MainWindow* window = new Window::MainWindow();
+			window->setGenericParent(this);
 
 			this->main_windows.push_back(window);
 

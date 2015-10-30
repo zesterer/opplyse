@@ -3,19 +3,16 @@
 #######################
 
 #settings.h header file
-configure_file(
-"settings.h.in"
-"settings.h"
-)
+#configure_file(
+#"settings.h.in"
+#"settings.h"
+#)
 
 ########################
 #### Subdirectories ####
 ########################
 
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/window")
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/application")
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/subwidgets")
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/common")
+#add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/test")
 
 #################
 #### SOURCES ####
@@ -32,6 +29,6 @@ PARENT_SCOPE
 #Add the appropriate source files
 set(APPLICATION_SOURCE_FILES
 ${APPLICATION_SOURCE_FILES}
-${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+${CMAKE_CURRENT_SOURCE_DIR}/generic.cpp
 PARENT_SCOPE
 )

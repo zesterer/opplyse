@@ -7,15 +7,18 @@
 //----LIBRARY----
 #include "gtkmm-3.0/gtkmm/window.h"
 
+//----LOCAL----
+#include "common/generic.h"
+#include "subwidgets/mainheaderbar.h"
+
 namespace Opplyse
 {
 	namespace Window
 	{
-		class MainWindow : public Gtk::Window
+		class MainWindow : public Common::Generic, public Gtk::Window
 		{
 			public:
-				MainWindow();
-				virtual ~MainWindow();
+				Application::Application* application;
 
 				int min_width = 320;
 				int min_height = 240;
@@ -24,6 +27,11 @@ namespace Opplyse
 				int default_height = 480;
 
 				std::string title = "Opplyse";
+
+				SubWidgets::MainHeaderBar main_header_bar;
+
+				MainWindow();
+				virtual ~MainWindow();
 		};
 	}
 }

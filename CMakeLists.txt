@@ -68,3 +68,9 @@ add_executable(${APPLICATION_NAME} ${APPLICATION_SOURCE_FILES})
 
 #Link the final executable to the needed libraries
 target_link_libraries(${APPLICATION_NAME} ${APPLICATION_LINK_LIBRARIES})
+
+####################
+#### INSTALLING ####
+####################
+
+INSTALL_PROGRAMS(/bin FILES ${APPLICATION_NAME})

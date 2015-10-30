@@ -11,6 +11,10 @@ namespace Opplyse
 			this->set_size_request(this->min_width, this->min_height);
 
 			this->set_title(this->title);
+
+			this->main_header_bar.setGenericParent(this);
+			this->set_titlebar(this->main_header_bar);
+			this->main_header_bar.set_visible(true);
 		}
 
 		MainWindow::~MainWindow()
