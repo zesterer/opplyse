@@ -1,9 +1,6 @@
 #ifndef OPPLYSE_WINDOW_MAINWINDOW_H
 #define OPPLYSE_WINDOW_MAINWINDOW_H
 
-//----STANDARD----
-#include "string"
-
 //----LIBRARY----
 #include "gtkmm-3.0/gtkmm/window.h"
 
@@ -25,8 +22,6 @@ namespace Opplyse
 
 				int default_width = 640;
 				int default_height = 480;
-
-				std::string title = "Opplyse";
 
 				SubWidgets::MainHeaderBar main_header_bar;
 

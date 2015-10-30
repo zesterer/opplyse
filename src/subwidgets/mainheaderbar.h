@@ -1,6 +1,9 @@
 #ifndef OPPLYSE_SUBWIDGETS_MAINHEADERBAR_H
 #define OPPLYSE_SUBWIDGETS_MAINHEADERBAR_H
 
+//----STANDARD----
+#include "string"
+
 //----LIBRARY----
 #include "gtkmm-3.0/gtkmm/headerbar.h"
 
@@ -20,6 +23,9 @@ namespace Opplyse
 		{
 			public:
 				Application::Application* application;
+
+				std::string title = "Opplyse";
+				std::string subtitle = "Version 0.0.0";
 
 				MainHeaderBar();
 				virtual ~MainHeaderBar();
