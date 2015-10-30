@@ -6,6 +6,7 @@
 
 //----LIBRARY----
 #include "gtkmm-3.0/gtkmm/headerbar.h"
+#include "gtkmm-3.0/gtkmm/button.h"
 
 //----LOCAL----
 #include "common/generic.h"
@@ -22,13 +23,15 @@ namespace Opplyse
 		class MainHeaderBar : public Common::Generic, public Gtk::HeaderBar
 		{
 			public:
-				Application::Application* application;
-
 				std::string title = "Opplyse";
 				std::string subtitle = "Version 0.0.0";
 
+				Gtk::Image* new_window_image;
+				Gtk::Button new_window_button;
+
 				MainHeaderBar();
 				virtual ~MainHeaderBar();
+				void onNewWindowButtonClicked();
 		};
 	}
 }

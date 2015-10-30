@@ -12,9 +12,11 @@ namespace Opplyse
 				Generic* generic_root;
 
 				Generic(Generic* parent = nullptr);
+				virtual ~Generic();
+
 				void setGenericParent(Generic* parent);
-				Generic& getGenericParent();
-				Generic& getGenericRoot();
+				Generic* getGenericParent();
+				Generic* getGenericRoot();
 		};
 	}
 }

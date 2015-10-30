@@ -11,6 +11,11 @@ namespace Opplyse
 				this->setGenericParent(parent);
 		}
 
+		Generic::~Generic()
+		{
+
+		}
+
 		void Generic::setGenericParent(Generic* parent)
 		{
 			this->generic_parent = parent;
@@ -21,14 +26,14 @@ namespace Opplyse
 				this->generic_root = parent->generic_root;
 		}
 
-		Generic& Generic::getGenericParent()
+		Generic* Generic::getGenericParent()
 		{
-			return *this->generic_parent;
+			return this->generic_parent;
 		}
 
-		Generic& Generic::getGenericRoot()
+		Generic* Generic::getGenericRoot()
 		{
-			return *this->generic_root;
+			return this->generic_root;
 		}
 	}
 }
