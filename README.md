@@ -10,6 +10,7 @@ Opplyse is a text editor created with C++ and GTK 3. It is designed to be clean 
 
 Here's the planned / implemented feature list. Implemented features are denoted with a '✔', incomplete features are denoted with a '~' and absent features are denoted with a '✘'.
 
+```
 [✘] Multi-file editing
 [✘] Edit detection
 [✘] Basic theming / configuration
@@ -19,6 +20,7 @@ Here's the planned / implemented feature list. Implemented features are denoted 
 [✘] Built-in VTE Terminal
 [✘] Line numbering
 [✘] Plugin support
+```
 
 ## Why recreate Vulcan?
 
