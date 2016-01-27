@@ -32,9 +32,13 @@ Clone the GitHub repository onto your local machine.
 
 `git clone https://www.github.com/zesterer/opplyse`
 
+## What build system does Opplyse use?
+
+Opplyse uses the Meson (https://github.com/mesonbuild/meson) build system. It is fast and well-suited to the needs to Opplyse. Those familiar with CMake will have no trouble handling it.
+
 ## How do I compile Opplyse?
 
-Those familiar with CMake will already know.
+Those familiar with Meson will already know.
 
 First, navigate to the opplyse directory.
 
@@ -44,13 +48,13 @@ Create a directory for Opplyse to be built within, then navigate to it.
 
 `mkdir build && cd build`
 
-Use CMake to set up a build environment for Opplyse.
+Use Meson to set up a build environment for Opplyse.
 
-`cmake ..`
+`meson ..`
 
-Compile Opplyse with MAKE.
+Compile Opplyse with Ninja.
 
-`make`
+`ninja-build`
 
 ## How do I run Opplyse?
 
